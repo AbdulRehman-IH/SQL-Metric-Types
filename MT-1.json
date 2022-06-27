@@ -1,7 +1,5 @@
 {
-   "id":24,
-   "tenant_name":"Special Tenant",
-   "title":"Jack",
+   "title":"Metric with model field",
    "metric_query":"select count({var__model_field}) from {var__my_table} where {CORE_FILTERS} and {TRP_FILTERS};",
    "group_by_1_query":"select {var__group_by_1}, count({var__model_field}) as result from {var__my_table} where {CORE_FILTERS} and {TRP_FILTERS} group by {var__group_by_1} ORDER BY {var__order_by};",
    "group_by_2_query":"select {var__group_by_1}, {var__group_by_2}, count({var__model_field}) as result from {var__my_table} where {CORE_FILTERS} and {TRP_FILTERS} group by {var__group_by_1}, {var__group_by_2} ORDER BY {var__order_by};",
@@ -17,5 +15,5 @@
           }, 
        "var__order_by": {"aspect": "TRP_SORT"}
    },
-   "data_warehouse_name":"mysql"
+   "dw_name":"mysql"
 }
