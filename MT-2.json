@@ -3,6 +3,6 @@
    "metric_query":"select count(*) as result from {var__trp_table} where {CORE_FILTERS} and {TRP_FILTERS};",
    "group_by_1_query":"select {var__group_by_1}, count(*) as result from {var__trp_table} where {CORE_FILTERS} and {TRP_FILTERS} GROUP BY {var__group_by_1} ORDER BY {var__order_by};",
    "group_by_2_query":"select {var__group_by_1}, {var__group_by_2}, count(*) as result from {var__trp_table} where {CORE_FILTERS} and {TRP_FILTERS} GROUP BY {var__group_by_1}, {var__group_by_2} ORDER BY {var__order_by};",
-   "sql_query_config":"{"var__trp_table": {"aspect": "TRP_TABLE"}, "var__group_by_1": {"aspect": "TRP_GROUP_1"}, "var__group_by_2": {"aspect": "TRP_GROUP_2"}, "var__order_by": {"aspect": "TRP_SORT"}}",
+   "sql_query_config":"{'var__trp_table': {'aspect': 'TRP_TABLE'}, 'var__group_by_1': {'aspect': 'TRP_GROUP_1'}, 'var__group_by_2': {'aspect': 'TRP_GROUP_2'}, 'var__order_by': {'aspect': 'TRP_SORT'}}",
    "dw_name":"mysql"
 }
