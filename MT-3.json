@@ -1,5 +1,5 @@
 {
-   "title":"Expression choices type",
+   "title":"Expression choices type 001",
    "metric_query":"select {var__choice}({var__column}) as result from {var__trp_table} where {CORE_FILTERS} and {TRP_FILTERS};",
    "group_by_1_query":"select {var__group_by_1} , {var__choice}({var__column}) as result from {var__trp_table} where {CORE_FILTERS} and {TRP_FILTERS} group by {var__group_by_1} order by {var__order_by};",
    "group_by_2_query":"select {var__group_by_1}, {var__group_by_2}, {var__choice}({var__column}) as result from {var__trp_table} where {CORE_FILTERS} and {TRP_FILTERS} group by {var__group_by_1}, {var__group_by_2} order by {var__order_by};",
