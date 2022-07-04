@@ -3,9 +3,6 @@
    "metric_query":"SELECT SUM((TIMESTAMPDIFF(SECOND, {var__date_field_1}, {var__date_field_2}) / 60)) AS result FROM {var__trp_table} WHERE {CORE_FILTERS} and {TRP_FILTERS};",
    "group_by_1_query":"SELECT {var__group_by_1}, SUM((TIMESTAMPDIFF(SECOND, {var__date_field_1}, {var__date_field_2}) / 60)) AS result FROM {var__trp_table} WHERE {CORE_FILTERS} and {TRP_FILTERS} GROUP BY {var__group_by_1}; ",
    "group_by_2_query":"SELECT {var__group_by_1}, {var__group_by_2}, SUM((TIMESTAMPDIFF(SECOND, {var__date_field_1}, {var__date_field_2}) / 60)) AS result FROM {var__trp_table} WHERE {CORE_FILTERS} and {TRP_FILTERS} GROUP BY {var__group_by_1}, {var__group_by_2};",
-   "sql_query_config":{
-      {"var__group_by_1": {"aspect": "TRP_GROUP_1"}, "var__group_by_2": {"aspect": "TRP_GROUP_2"}, "var__trp_table": {"aspect": "TRP_TABLE"}, "var__date_field_1": {"aspect": "USER_INPUT", "type": "ModelField", "label": "Date 1"}, "var__date_field_2": {"aspect": "USER_INPUT", "type": "ModelField", "label": "Date 2"}}
-          }, 
-   },
+   "sql_query_config":{"var__group_by_1": {"aspect": "TRP_GROUP_1"}, "var__group_by_2": {"aspect": "TRP_GROUP_2"}, "var__trp_table": {"aspect": "TRP_TABLE"}, "var__date_field_1": {"aspect": "USER_INPUT", "type": "ModelField", "label": "Date 1"}, "var__date_field_2": {"aspect": "USER_INPUT", "type": "ModelField", "label": "Date 2"}},
    "dw_name":"mysql"
 }
