@@ -1,0 +1,1 @@
+{"title": "datetime", "metric_query": null, "group_by_1_query": null, "group_by_2_query": null, "sql_query_config": {"var__group_by": {"aspect": "TRP_GROUP_1"}, "var__table": {"aspect": "TRP_TABLE"}, "var__dt": {"aspect": "USER_INPUT", "label": "Upper Limit Of ID", "type": "DateTimeField"}}, "dw_name": "mysql"}
