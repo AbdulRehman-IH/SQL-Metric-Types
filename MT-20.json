@@ -1,0 +1,1 @@
+{"title": "m2", "metric_query": null, "group_by_1_query": null, "group_by_2_query": null, "sql_query_config": {"var__nehal": {"aspect": "TRP_GROUP_1"}, "var__table": {"aspect": "TRP_TABLE"}, "var__date_time_value": {"aspect": "USER_INPUT", "type": "DateTimeField", "default": "01-01-2021 00:00:00", "label": "Join Time Less Than"}}, "dw_name": "mysql"}
